@@ -92,7 +92,7 @@ def test_guest_can_add_product_to_basket(browser, link):
     page.should_be_correct_name()
     page.should_be_correct_price()
 
-
+@pytest.mark.need_review
 def test_guest_can_go_to_login_page_from_product_page(browser):
     """
     Проверяем наличие ссылки на логин со страницы товара для гостя
